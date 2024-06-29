@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../image/BG.png);
+    background-color: #0d3bc4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+:root{
+    --whiteColor: white;
+    --loginBorderColor: #2148C0;
+}
+.form__control{
+    width: 450px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+.titles{
+    text-align: center;
+    color: var(--whiteColor);
+    margin-top: 162px;
+}
+.login__title{
+    margin-bottom: 10px;
+    position: relative;
+}
+.login__title::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--whiteColor);
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+    border-radius: 50%;
+
+}
+
+.subtitle{
+    margin-bottom: 30px;
+}
+
+.input{
+    font-weight: 400;
+    width: 100%;
+    margin: 10px 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    padding:  9px 35px;
+    outline: none;
+    border: 1px solid var(--whiteColor);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--whiteColor);
+    text-transform: uppercase;
+}
+
+input::placeholder{
+    color: var(--whiteColor);
+    
+}
+
+.forgot{
+    float: right;
+    color: var(--whiteColor);
+    margin-top: -10px;
+}
+
+.btn{
+    margin-top: 43px;
+    width: 100%;
+    font-size: large;
+    padding:  9px 10px;
+    outline: none;
+    border: 2px solid var(--whiteColor);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--whiteColor);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.7s linear;
+}
+.btn:hover{
+    background-color: var(--whiteColor);
+    color: var(--loginBorderColor);
+}
+
+.google__icons{
+    width: 100%;
+    font-size: large;
+    padding:  9px 12px;
+    border-radius: 10px;
+    background-color: black;
+    color: var(--whiteColor);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.google__icons:active{
+    background-color: rgb(158, 156, 156);
+    color: rgb(56, 53, 49);
+    
+}
+
+.register{
+    text-align: center;
+    color: var(--whiteColor);
+}
+
+.box1{
+    margin-top: 71px;
+}
+
+
+.input__box{
+    position: relative;
+}
+.input__icon{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    color: var(--whiteColor);
+    font-size: 1.2rem;
+}
